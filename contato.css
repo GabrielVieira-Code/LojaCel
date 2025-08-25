@@ -1,0 +1,100 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar (mesma lógica da página inicial) */
+nav {
+    background-color: #222;   /* Cor de fundo */
+    color: white;             /* Texto branco */
+    display: flex;            /* Flexbox para organizar logo e menu */
+    justify-content: space-between; /* Logo à esquerda, menu à direita */
+    padding: 15px 30px;
+    align-items: center;      /* Centraliza itens verticalmente */
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .menu {
+    list-style: none;   /* Remove bolinhas da lista */
+    display: flex;      /* Deixa os itens lado a lado */
+    gap: 20px;          /* Espaço entre os itens */
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    color: #ff9800; /* Muda cor quando passa o mouse */
+}
+
+/* Seção de contato */
+.contato {
+    max-width: 600px;    /* Largura máxima */
+    margin: 40px auto;   /* Centraliza na tela */
+    background: white;   /* Fundo branco */
+    padding: 30px;       /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1); /* Sombra leve */
+    text-align: center;
+}
+
+.contato h1 {
+    margin-bottom: 10px;
+}
+
+.contato p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Campos em coluna */
+    gap: 15px;              /* Espaço entre os campos */
+}
+
+form label {
+    text-align: left; /* Labels alinhados à esquerda */
+    font-weight: bold;
+}
+
+/* Inputs e textarea */
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Textarea maior */
+form textarea {
+    height: 100px;
+    resize: none; /* Remove opção de redimensionar */
+}
+
+/* Botão */
+form button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #e68900; /* Tom mais escuro ao passar mouse */
+}
