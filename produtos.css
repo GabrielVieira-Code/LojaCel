@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar (mesma lógica da página inicial) */
+nav {
+    background-color: #222;   /* Cor de fundo */
+    color: white;             /* Texto branco */
+    display: flex;            /* Flexbox para organizar logo e menu */
+    justify-content: space-between; /* Logo à esquerda, menu à direita */
+    padding: 15px 30px;
+    align-items: center;      /* Centraliza itens verticalmente */
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .menu {
+    list-style: none;   /* Remove bolinhas da lista */
+    display: flex;      /* Deixa os itens lado a lado */
+    gap: 20px;          /* Espaço entre os itens */
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    color: #ff9800; /* Muda cor quando passa o mouse */
+}
+
+
+
+
+/* Página de Produto Detalhe */
+.produto-detalhe {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagem maior do produto */
+.produto-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Informações do produto */
+.produto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produto-info h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.produto-info .preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.produto-info .descricao {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Input quantidade */
+.produto-info input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de comprar */
+.btn-comprar {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #e68900;
+}
+
+/* Lista de extras */
+.extras {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    color: #333;
+}
+
+.extras li {
+    margin-bottom: 8px;
+}
